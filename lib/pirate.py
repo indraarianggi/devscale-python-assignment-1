@@ -1,15 +1,12 @@
 class Pirate:
-    def __init__(self, name: str, occupation: str, bounty: int):
+    def __init__(self, name, occupation, bounty, wanted_poster):
         self.name = name
         self.occupation = occupation
         self.bounty = bounty
-        self.is_captured = False
+        self.wanted_poster = wanted_poster
     
     def update_bounty(self, amount):
         self.bounty = amount
-
-    def capture(self):
-        self.is_captured = True
     
     def __str__(self):
         return self.name
